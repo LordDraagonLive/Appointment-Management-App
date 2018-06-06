@@ -1,0 +1,31 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpagecont.MainPageActivity">
+
+    <fragment
+        android:id="@+id/fragment_main_page"
+        android:name="com.bacdevelopers.appointmentmanagementapplication.mainpagecont.MainPageActivityFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_main_page" />
+
+    <fragment
+        android:id="@+id/fragment_main_page_btn"
+        android:name="com.bacdevelopers.appointmentmanagementapplication.mainpagecont.MainPageBtnFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_main_page"
+        tools:layout="@layout/fragment_main_page_btn" />
+
+
+</android.support.constraint.ConstraintLayout>

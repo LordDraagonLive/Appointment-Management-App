@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createpagecont.CreatePage">
+
+
+    <ScrollView
+        android:id="@+id/scrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/PageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Appointment"
+                android:textAlignment="center"
+                android:textSize="30sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Appointment Title : ">
+            </TextView>
+
+            <EditText
+                android:id="@+id/appointmentTitleTxt"
+                android:layout_height="wrap_content"
+                android:hint="Appointment Title"
+                android:inputType="text"
+                android:layout_width="match_parent">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Appointment Time : ">
+            </TextView>
+
+            <EditText
+                android:id="@+id/appointmentTimeTxt"
+                android:layout_height="wrap_content"
+                android:hint="Appointment Time"
+                android:inputType="time"
+                android:layout_width="match_parent">
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Appointment Details : ">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/appointmentDetailTxt"
+                android:layout_height="wrap_content"
+                android:hint="Appointment Details"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/thesaurusReplaceBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thesaurus"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Find Synonyms : ">
+            </TextView>
+
+            <EditText
+                android:id="@+id/thesaurusTxt"
+                android:layout_height="wrap_content"
+                android:hint="Find in thesaurus..."
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent">
+            </EditText>
+
+            <Button
+                android:id="@+id/thesaurusBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thesaurus"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".mainpagecont.MainPageBtnFragment"
+    android:background="@color/btnListBckGrd">
+
+
+    <Button
+        android:id="@+id/createAppoint_btn"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:shadowColor="#fdfdfd"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Create Appointment"
+        android:textColor="#281666" />
+
+    <Button
+        android:id="@+id/viewEditAp_btn"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:shadowColor="#fdfdfd"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="View/Edit Appointments"
+        android:textColor="#281666" />
+
+    <Button
+        android:id="@+id/deleteAp_Btn"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:text="Delete Appointment"
+        android:shadowColor="#fdfdfd"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#281666"/>
+
+    <Button
+        android:id="@+id/moveAp_Btn"
+        android:layout_width="168dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/deleteAp_Btn"
+        android:text="Move Appointment"
+        android:shadowColor="#fdfdfd"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#281666"/>
+
+    <Button
+        android:id="@+id/search_Btn"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp"
+        android:text="Search"
+        android:shadowColor="#fdfdfd"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#281666"/>
+
+</RelativeLayout>
